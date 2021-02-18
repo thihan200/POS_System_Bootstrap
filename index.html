@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="icon" href="assets/img/my_logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <title>POS_Home</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light text-white-50 border-bottom shadow p-3 mb-5" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <!-- Image and text -->
+                <a class="navbar-brand p-0" href="#">
+                    <img src="assets/img/business.png" alt="" width="75px" height="70px" class="d-inline-block align-top">
+                </a>
+                 <a id="title-text" class="navbar-brand font-weight-bold fs-2 ps-0 text-success" href="#" style=" font-family: 'Noto Sans TC', sans-serif;">Thihan POS System</a>
+        <!--End Image-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-3 fs-5" id="navbarNavDropdown" >
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-body" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Employees</a></li>
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Order Details</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a href="#">
+        <img src="assets/img/logout.png" alt="" width="20px" height="20px" class="d-inline-block align-top m-1">
+        <a id="title-text1" class="navbar-brand font-weight-bold ps-0 text-primary" href="#">Logout</a>
+        </a>
+    </div>
+</nav>
+
+<!---------------------------------------------------------------------------------------------------------->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/wallpaper-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/wallpaper-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/wallpaper-3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
