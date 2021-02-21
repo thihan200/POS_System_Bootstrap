@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/my_logo.png">
+    <title>POS_Customer</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light text-white-50 border-bottom shadow p-2 mb-0 sticky-top w-100" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <a class="navbar-brand p-0" href="#">
+            <img src="assets/img/business.png" alt="" width="75px" height="75px" class="d-inline-block align-top">
+        </a>
+        <a id="title-text" class="navbar-brand font-weight-bold fs-2 ps-1 text-success" href="#" style=" font-family: 'Noto Sans TC', sans-serif;">Thihan POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-3 fs-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-black-50" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="customer.html">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Employees</a></li>
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Order Details</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <a href="#"><img src="assets/img/logout.png" alt="" width="23px" height="27px" class="d-inline-block align-top m-1 pt-1"></a>
+                <a id="title-text1" class="navbar-brand font-weight-bold ps-1 text-primary" href="#">Logout</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-primary fs-3 ps-3" href="#">
+            <img src="assets/img/customer-group.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Customer
+
+            <form class="d-flex">
+            <a id="title1" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="#">Home ></a>
+            <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="#">Customer</a>
+            </form>
+        </a>
+    </div>
+</nav>
+
+<div class="container bg-light p-5 ps-3 mt-5">
+    <div class="row">
+        <div class="col container-fluid">
+            <div class="container col-11">
+                <div class="card">
+                    <div class="card-header bg-success fw-bold fs-4 text-white">
+                        Manage Customer
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="id" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Customer ID</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="name" class="form-control" id="floatingInput1" placeholder="name@example.com">
+                                <label for="floatingInput">Customer Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="address" class="form-control" id="floatingInput2" placeholder="name@example.com">
+                                <label for="floatingInput">Customer address</label>
+                            </div>
+                            <div class="form-floating mb-5">
+                                <input type="name" class="form-control" id="floatingInput4" placeholder="name@example.com">
+                                <label for="floatingInput">Customer Salary</label>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success">Search</button>
+                                <button type="button" class="btn btn-warning">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-info">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col ps-0">
+            <div class="btn-group float-end" role="group" aria-label="Basic mixed styles example">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add New Customer
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary fw-bold text-white">
+                                <h5 class="modal-title" id="exampleModalLabel">Add New Customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="id" class="form-control" id="floating0" placeholder="Thihan Gamage">
+                                    <label for="floatingInput">Customer ID</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="floating1" placeholder="name@example.com">
+                                    <label for="floatingInput">Customer Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="address" class="form-control" id="floating2" placeholder="name@example.com">
+                                    <label for="floatingInput">Customer address</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="name" class="form-control" id="floating3" placeholder="name@example.com">
+                                    <label for="floatingInput">Customer Salary</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Add Customer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-5 pt-4">
+                <table class="table table-hover">
+                    <thead class="bg-secondary text-white">
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Amal</td>
+                        <td>Panadura</td>
+                        <td>20000</td>
+
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Sunil</td>
+                        <td>Galle</td>
+                        <td>15600</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Saman</td>
+                        <td>Kalutara</td>
+                        <td>34000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+<script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
