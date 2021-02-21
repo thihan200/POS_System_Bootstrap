@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>POS_Employee</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fonts/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/my_logo.png">
-    <title>POS_Customer</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-md navbar-light text-white-50 border-bottom shadow p-2 mb-0 sticky-top w-100" style="background-color: #e3f2fd;">
     <div class="container-fluid">
         <a class="navbar-brand p-0" href="#">
@@ -26,17 +26,17 @@
                     <a class="nav-link active text-black-50" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="customer.html">Customers</a>
+                    <a class="nav-link" href="customer.html">Customers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="item.html">Items</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Others
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="employee.html">Employees</a></li>
+                        <li><a class="dropdown-item fw-bold" href="employee.html">Employees</a></li>
                         <li><a class="dropdown-item" href="#">Orders</a></li>
                         <li><a class="dropdown-item" href="#">Order Details</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -52,15 +52,14 @@
     </div>
 </nav>
 
-<!-- Image and text -->
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand text-info fs-3 ps-3" href="#">
-            <img src="assets/img/customer-group.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Customers
+            <img src="assets/img/employees.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Employees
 
             <form class="d-flex">
-            <a id="title1" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="#">Home ></a>
-            <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="#">Customers</a>
+                <a id="title1" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="#">Home ></a>
+                <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="#">Employees</a>
             </form>
         </a>
     </div>
@@ -71,26 +70,26 @@
         <div class="col container-fluid">
             <div class="container col-11">
                 <div class="card">
-                    <div class="card-header bg-success fw-bold fs-4 text-white">
-                        Manage Customer
+                    <div class="card-header fw-bold fs-4 text-dark" style="background-color: darkkhaki">
+                        Manage Employee
                     </div>
                     <div class="card-body">
                         <div class="container">
                             <div class="form-floating mb-3 mt-3">
                                 <input type="id" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Customer ID</label>
+                                <label for="floatingInput">Employee ID</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="name" class="form-control" id="floatingInput1" placeholder="name@example.com">
-                                <label for="floatingInput">Customer Name</label>
+                                <label for="floatingInput">Employee Name</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="address" class="form-control" id="floatingInput2" placeholder="name@example.com">
-                                <label for="floatingInput">Customer address</label>
+                                <label for="floatingInput">Employes address</label>
                             </div>
                             <div class="form-floating mb-5">
                                 <input type="name" class="form-control" id="floatingInput4" placeholder="name@example.com">
-                                <label for="floatingInput">Customer Salary</label>
+                                <label for="floatingInput">Employee Salary</label>
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                 <button type="button" class="btn btn-success">Search</button>
@@ -106,39 +105,39 @@
         <div class="col ps-0">
             <div class="btn-group float-end" role="group" aria-label="Basic mixed styles example">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Add New Customer
+                <button type="button" class="btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: darkkhaki">
+                    Add New Employee
                 </button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header bg-primary fw-bold text-white">
-                                <h5 class="modal-title" id="exampleModalLabel">Add New Customer</h5>
+                            <div class="modal-header fw-bold text-dark" style="background-color: darkkhaki">
+                                <h5 class="modal-title" id="exampleModalLabel">Add New Employee</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-floating mb-3 mt-3">
                                     <input type="id" class="form-control" id="floating0" placeholder="Thihan Gamage">
-                                    <label for="floatingInput">Customer ID</label>
+                                    <label for="floatingInput">Employee ID</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="name" class="form-control" id="floating1" placeholder="name@example.com">
-                                    <label for="floatingInput">Customer Name</label>
+                                    <label for="floatingInput">Employee Name</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="address" class="form-control" id="floating2" placeholder="name@example.com">
-                                    <label for="floatingInput">Customer address</label>
+                                    <label for="floatingInput">Employee address</label>
                                 </div>
                                 <div class="form-floating mb-2">
                                     <input type="name" class="form-control" id="floating3" placeholder="name@example.com">
-                                    <label for="floatingInput">Customer Salary</label>
+                                    <label for="floatingInput">Employee Salary</label>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Add Customer</button>
+                                <button type="button" class="btn btn-warning">Add Employee</button>
                             </div>
                         </div>
                     </div>
@@ -146,30 +145,30 @@
             </div>
             <div class="col-sm mt-5 pt-4" style=" height:400px ;overflow-y: scroll">
                 <table class="table table-hover">
-                    <thead class="bg-secondary text-white">
+                    <thead class="text-dark" style="background-color: darkkhaki">
                     <tr>
-                        <th>Customer ID</th>
-                        <th>Customer Name</th>
-                        <th>Customer Address</th>
-                        <th>Customer Salary</th>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Employee Address</th>
+                        <th>Employee Salary</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>C001</td>
+                        <td>E001</td>
                         <td>Amal</td>
                         <td>Panadura</td>
                         <td>20000</td>
 
                     </tr>
                     <tr>
-                        <td>C002</td>
+                        <td>E002</td>
                         <td>Sunil</td>
                         <td>Galle</td>
                         <td>15600</td>
                     </tr>
                     <tr>
-                        <td>C003</td>
+                        <td>E003</td>
                         <td>Saman</td>
                         <td>Kalutara</td>
                         <td>34000</td>
@@ -180,7 +179,7 @@
         </div>
     </div>
 </div>
-<!---->
+
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
