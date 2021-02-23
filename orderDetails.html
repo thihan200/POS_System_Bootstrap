@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS_Orders</title>
+    <title>POS_OrderDetails</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fonts/css/all.css">
@@ -37,8 +37,8 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item " href="employee.html">Employees</a></li>
-                        <li><a class="dropdown-item fw-bold" href="orders.html">Orders</a></li>
-                        <li><a class="dropdown-item" href="orderDetails.html">Order Details</a></li>
+                        <li><a class="dropdown-item " href="orders.html">Orders</a></li>
+                        <li><a class="dropdown-item fw-bold" href="orderDetails.html">Order Details</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                     </ul>
@@ -54,12 +54,12 @@
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand fs-3 ps-3" style="color: darkcyan" href="#">
-            <img src="assets/img/Order.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Orders
+        <a class="navbar-brand text-info fs-3 ps-3" href="#">
+            <img src="assets/img/orderDetails.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Order Details
 
             <form class="d-flex">
                 <a id="title1" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
-                <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="orders.html">Orders</a>
+                <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="orderDetails.html">Order Details</a>
             </form>
         </a>
     </div>
@@ -70,8 +70,8 @@
         <div class="col container-fluid">
             <div class="container col-11">
                 <div class="card">
-                    <div class="card-header fw-bold fs-4 text-dark" style="background-color: darkseagreen">
-                        Manage Orders
+                    <div class="card-header fw-bold fs-4 text-dark" style="background-color: lightcoral">
+                        Manage Order Details
                     </div>
                     <div class="card-body">
                         <div class="container">
@@ -81,11 +81,15 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="name" class="form-control" id="floatingInput1" placeholder="name@example.com">
-                                <label for="floatingInput">Order Date</label>
+                                <label for="floatingInput">Item Code</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="address" class="form-control" id="floatingInput2" placeholder="name@example.com">
+                                <label for="floatingInput">Qty</label>
                             </div>
                             <div class="form-floating mb-5">
-                                <input type="address" class="form-control" id="floatingInput2" placeholder="name@example.com">
-                                <label for="floatingInput">Customer ID</label>
+                                <input type="address" class="form-control" id="floatingInput3" placeholder="name@example.com">
+                                <label for="floatingInput">Unit Price</label>
                             </div>
                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                 <button type="button" class="btn btn-success">Search</button>
@@ -101,16 +105,16 @@
         <div class="col ps-0">
             <div class="btn-group float-end" role="group" aria-label="Basic mixed styles example">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: darkseagreen">
-                    Add New Order
+                <button type="button" class="btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: lightcoral">
+                    Add New Order Detail
                 </button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header fw-bold text-dark" style="background-color: darkseagreen">
-                                <h5 class="modal-title" id="exampleModalLabel">Add New Order</h5>
+                            <div class="modal-header fw-bold text-dark" style="background-color: lightcoral">
+                                <h5 class="modal-title" id="exampleModalLabel">Add New Order Detail</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -120,16 +124,20 @@
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="name" class="form-control" id="floating1" placeholder="name@example.com">
-                                    <label for="floatingInput">Order Date</label>
+                                    <label for="floatingInput">Item Code</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="address" class="form-control" id="floating2" placeholder="name@example.com">
-                                    <label for="floatingInput">Customer ID</label>
+                                    <label for="floatingInput">Qty</label>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="address" class="form-control" id="floating3" placeholder="name@example.com">
+                                    <label for="floatingInput">Unit Price</label>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-danger">Add Order</button>
+                                <button type="button" class="btn btn-danger">Add Order Detail</button>
                             </div>
                         </div>
                     </div>
@@ -137,29 +145,33 @@
             </div>
             <div class="col-sm mt-5 pt-4" style=" height:400px ;overflow-y: scroll">
                 <table class="table table-hover">
-                    <thead class="text-dark" style="background-color: darkseagreen">
+                    <thead class="text-dark" style="background-color: lightcoral">
                     <tr>
                         <th>Order ID</th>
-                        <th>Order Date</th>
-                        <th>Customer ID</th>
+                        <th>Item Code</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>O001</td>
-                        <td>2020/03/23</td>
-                        <td>C001</td>
+                        <td>I001</td>
+                        <td>20</td>
+                        <td>30.00</td>
 
                     </tr>
                     <tr>
                         <td>O002</td>
-                        <td>2020/05/12</td>
-                        <td>C001</td>
+                        <td>I002</td>
+                        <td>10</td>
+                        <td>50.00</td>
                     </tr>
                     <tr>
                         <td>O003</td>
-                        <td>2020/12/02</td>
-                        <td>C002</td>
+                        <td>I003</td>
+                        <td>5</td>
+                        <td>100.00</td>
                     </tr>
                     </tbody>
                 </table>
