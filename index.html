@@ -12,31 +12,30 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light text-white-50 border-bottom shadow p-2 mb-0 sticky-top w-100" style="background-color: #e3f2fd;">
+
+<nav class="navbar navbar-expand-lg navbar-light text-white-50 border-bottom shadow mb-0 sticky-top" style="background-color: #e3f2fd;">
     <div class="container-fluid">
-        <a class="navbar-brand p-0" href="#">
-            <img src="assets/img/business.png" alt="" width="75px" height="75px" class="d-inline-block align-top">
-        </a>
-        <a id="title-text" class="navbar-brand font-weight-bold fs-2 ps-1 text-success" href="#" style=" font-family: 'Noto Sans TC', sans-serif;">Thihan POS System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/img/business.png" alt="" width="65px" height="65px" class="d-inline-block align-top">
+        <a id="title-text" class="navbar-brand font-weight-bold fs-3 ps-sm-3 text-success" href="#" style=" font-family: 'Noto Sans TC', sans-serif;">Thihan POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ps-3 fs-5" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fs-5 ps-3" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="customer.html">Customers</a>
+                    <a class="nav-link" href="customer.html">Customers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="item.html">Items</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Others
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                         <li><a class="dropdown-item" href="employee.html">Employees</a></li>
                         <li><a class="dropdown-item" href="orders.html">Orders</a></li>
                         <li><a class="dropdown-item" href="orderDetails.html">Order Details</a></li>
@@ -52,6 +51,7 @@
         </div>
     </div>
 </nav>
+
 
 <!---------------------------------------------------------------------------------------------------------->
 <!--<div class="container-fluid p-0">
@@ -92,13 +92,13 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assets/img/wallpaper-1.jpg" class="d-block w-100" alt="..." height="570">
+            <img src="assets/img/wallpaper-1.jpg" class="d-block w-100" alt="..." height="">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/wallpaper-2.jpg" class="d-block w-100" alt="..." height="570">
+            <img src="assets/img/wallpaper-2.jpg" class="d-block w-100" alt="..." height="">
         </div>
         <div class="carousel-item">
-            <img src="assets/img/wallpaper-3.jpg" class="d-block w-100" alt="..." height="570">
+            <img src="assets/img/wallpaper-3.jpg" class="d-block w-100" alt="..." height="">
         </div>
     </div>
     <button class="carousel-control-prev p-0 m-0 border-0 bg-transparent" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -112,11 +112,12 @@
 </div>
 </div>
 <!---------------------------------------------------------------------------------------------->
+<div class="container-fluid p-0">
 <div class="bg-gradient pt-5 " style="background-color: #bdc3c7">
     <div class="container px-5 pb-4">
-        <div class="row gx-4">
+        <div class="row">
             <div class="col">
-                <div class="card border-success mb-3" style="width: 230px ; height: 250px">
+                <div class="card border-success mb-3">
                     <div class="card-header text-dark fw-bold fs-5">Customers</div>
                     <div class="card-body">
                         <img src="assets/img/customers.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
@@ -126,7 +127,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card border-primary mb-3" style="width: 230px ; height: 250px">
+                <div class="card border-primary mb-3" >
                     <div class="card-header text-dark fw-bold fs-5">Items</div>
                     <div class="card-body">
                         <img src="assets/img/items.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
@@ -135,7 +136,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card border-warning mb-3" style="width: 230px ; height: 250px">
+                <div class="card border-warning mb-3">
                     <div class="card-header text-dark fw-bold fs-5">Orders</div>
                     <div class="card-body">
                         <img src="assets/img/orders.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
@@ -144,20 +145,20 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card border-danger" style="width: 230px ; height: 250px">
+                <div class="card border-danger mb-3">
                     <div class="card-header text-dark fw-bold fs-5">Reports</div>
                     <div class="card-body">
                         <img src="assets/img/reports.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
-                        <div class="dash-tile-text text-end">
-                        <a href="#" class="btn btn-danger fs-6 mt-3" style="width: 95px; height: 40px">See More</a>
-                        </div>
+                        <h5 class="text-end text-dark fs-2">
+                            <button class="btn btn-danger">See More</button>
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</div>
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
